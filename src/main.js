@@ -24,7 +24,7 @@ document.getElementById('convert-button').addEventListener('click', () => {
                 type: "Feature",
                 geometry: {
                     type: "LineString",
-                    coordinates: decodedPolyline.polyline.map(([lat, lon]) => [lat, lon]) // GeoJSON uses [lon, lat]
+                    coordinates: decodedPolyline.polyline.map(([lat, lon]) => [lon, lat]) // GeoJSON uses [lon, lat]
                 },
                 properties: {}
             };
